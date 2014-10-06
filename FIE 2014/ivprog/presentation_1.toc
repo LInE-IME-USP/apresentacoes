@@ -1,5 +1,5 @@
-\beamer@endinputifotherversion {3.24pt}
+\beamer@endinputifotherversion {3.33pt}
 \select@language {brazil}
-\beamer@sectionintoc {1}{First Section}{6}{0}{1}
-\beamer@subsectionintoc {1}{1}{Subsection Example}{6}{0}{1}
-\beamer@sectionintoc {2}{Second Section}{10}{0}{2}
+\beamer@sectionintoc {1}{Introduction}{6}{0}{1}
+\beamer@sectionintoc {2}{Experiment}{9}{0}{2}
+\beamer@sectionintoc {3}{Discussion, conslusions and future work}{25}{0}{3}
