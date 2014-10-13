@@ -94,7 +94,7 @@
 \begin{frame}
 \frametitle{Introduction}
 \begin{block}{Context: logical reasoning and computer programming}
-Proposed as fundamental abilities and their introduction in early stages of education has been adopted in an increasing rate.
+Proposed as fundamental abilities and their introduction in early stages of education has been adopted in an increasing rate
 \end{block}
 \begin{block}{Problems: introducing it earlier may adress some challenges}
 \begin{itemize}
@@ -102,7 +102,7 @@ Proposed as fundamental abilities and their introduction in early stages of educ
 	\begin{itemize}
 	\item{new software environment (programming environment)}
 	\item{new way of describing a problem and it's solution (programming language)}
-	\item{new way of thinking (to solve problems computationally)}
+	\item{learn to solve problems computationally}
 	\end{itemize}
 \end{itemize}
 \end{block}
@@ -112,11 +112,11 @@ Proposed as fundamental abilities and their introduction in early stages of educ
 \frametitle{Introduction}
 \begin{block}{Proposals to overcome some of these problems}
 \begin{itemize}
-\item There are some proposals of using visual systems to support the learning of introductory programming (e.g. Raptor \cite{p1}, Greenfoot\cite{p2}, Scratch \cite{p3} and Alice \cite{p4}).
+\item There are some proposals of using visual systems to support the learning of introductory programming (e.g. Raptor \cite{p1}, Greenfoot\cite{p2}, Scratch \cite{p3} and Alice \cite{p4})
 \item Most of Visual Programming (\textbf{VP}) systems allows students to:
 	\begin{itemize}
-	\item{compile and execute their algorithm with a single click}
-	\item{build programs without any concern related to the textual  programming language syntax}
+	\item{compile and execute (or interprete) their algorithm with a single click}
+	\item{build programs without ``knowing by heart'' the programming language sintax}
 	\item{consequently, they may focus their attention to the problem solution}
 	\end{itemize}
 \end{itemize}
@@ -131,7 +131,9 @@ An experiment to evaluate the mental workload during the learning process (VP ve
 \begin{itemize}
 \item created two similar web-courses of Introductory Programming
 	\begin{itemize}
+	\item students were separated into two groups: G1 (visual programming) and G2 (textual programming language)
 	\item delivered through Moodle
+	\item was an Opened Online Course, not a MOOC since it had 144 students enrolled
 	\item same instructional material with differences only concerning the tools
 \end{itemize}
 \item created a NASA Task Load Index (NASA-TLX) Moodle module for evaluating mental workload
@@ -144,9 +146,46 @@ An experiment to evaluate the mental workload during the learning process (VP ve
 \begin{frame}
 \frametitle{Background: iVProg, VPL and NASA-TLX}
 \begin{block}{iVProg}
+Visual Programming System to teach algorithms (procedural~programming):
+\begin{itemize}
+\item firstly deployed in 2009 (based on Alice, from Carnegie Mellon)
+\item the second version of iVProg was developed using a framework for Interactive Learning Modules
+\item features: 
+\begin{itemize}
+\item new lines of code with context menu
+\item drag-and-drop combined with pointing-and-click to order lines of code
+\item edit-in-place for variable names and values
+\item automatic evaluation
+\item interpret students algorithm with a single click
+\end{itemize}
+\item iVProg is a Free Software
+\begin{itemize}
+\item https://github.com/LInE-IME-USP/ivp2java
+\end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Background: iVProg, VPL and NASA-TLX}
+\begin{block}{iVProg}
 \begin{figure} %IVPROG%
 \includegraphics[width=0.70\linewidth]{ivprog.png}
 \end{figure}
+\end{block}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Background: iVProg, VPL and NASA-TLX}
+\begin{block}{Virtual Programming Lab - VPL}
+The VPL system is a Moodle module developed at Universidad de las Palmas Gran Canaria, Spain.
+\begin{itemize}
+\item is a Free Software for Moodle
+\item supports many languages (we used C programming language)
+\item automatic evaluation
+\item interpret students algorithm with a single click
+\item http://vpl.dis.ulpgc.es/index.php/en/
+\end{itemize}
 \end{block}
 \end{frame}
 %------------------------------------------------
@@ -164,8 +203,8 @@ An experiment to evaluate the mental workload during the learning process (VP ve
 \begin{block}{NASA-TLX Protocol}
 \begin{itemize}
 \item Objective: measure workload during the execution of an activity
-\item Workload: defined in \cite{p5} as a hypothetical construct that represents the cost of someone finishing a task and reaching a certain level of performance.
-\item How: by filling up a questionaire with six scales, giving them values and then conducting a pairwise choice between the scales giving them weights
+\item Workload: defined by Hart and Staveland (1988) as a hypothetical construct that represents the cost of someone finishing a task and reaching a certain level of performance.
+\item How: by filling up a questionaire with six scales, giving them values and then conducting a pairwise choice between the scales, giving them weights
 \item Scales:
 \begin{itemize}
 \item Mental Demand (MD)
@@ -184,7 +223,7 @@ An experiment to evaluate the mental workload during the learning process (VP ve
 \begin{block}{NASA-TLX Protocol}
 \begin{figure} %NASA TLX%
 \includegraphics[width=0.80\linewidth]{nasa-parte1.png}
-NASA-TLX (scales)
+\\ NASA-TLX $1^{st}$ step: evaluating the demands for each scale after completing one task
 \end{figure}
 \end{block}
 \end{frame}
@@ -194,16 +233,28 @@ NASA-TLX (scales)
 \begin{block}{NASA-TLX Protocol}
 \begin{figure} %NASA TLX%
 \includegraphics[width=0.80\linewidth]{nasa-parte2.png}
-\\ NASA-TLX (pairwise choice)
+\\ NASA-TLX $2^{nd}$ step: pairwise choice, giving each scale a weight that represents the importance of each scale while accomplishing a task
 \end{figure}
 \end{block}
 \end{frame}
 %------------------------------------------------
 \begin{frame}
 \frametitle{Experiment setup}
+\begin{block}{The course}
+\begin{itemize}
+\item The course had last for 4 weeks and was delivered fully online
+\item Since the environments were Java dependents, students had instruction on how to install Java by video tutorials for Windows and Linux, with Chrome and Firefox examples
+\item A small video (our production) with the history of computers were presented
+\item The course was organized in 4 blocks
+\item Every theoretical content for each block was delivered as hypertext with the very same textual content, but with different images concerning the environment (iVProg and VPL)
+\end{itemize}
+\end{block}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Experiment setup}
 \begin{block}{Curriculum}
-Theoretical and practical content were presented in four
-modules:
+Theoretical and practical content were distributed into the blocks as follows:
 \begin{itemize}
 \item \textbf{Block 1}: "Algorithms" - definition of algorithms and basic concepts of programming (variables and their types, data input and output etc.)
 \item \textbf{Block 2}: "Selection" and it is composed of comments about the previous module, definition of selection with examples.
@@ -268,7 +319,7 @@ A really small number os students had concluded the course and made the activiti
 \begin{itemize}
 \item NASA-TLX: Wilcoxon-Mann-Whitney (WMW) test and comparisons with medians
 \begin{itemize}
-\item reason:low number of respondents, besides the apparent nonsymmetrical distribution of data
+\item reason: low number of respondents, besides the apparent nonsymmetrical distribution of data
 \item brief: WMW test consists of defining ranks based on the samples values.~The higher the sample ranks, the higher is the values in the distribution
 \item hypothesis:
 \begin{itemize}
@@ -303,7 +354,7 @@ A really small number os students had concluded the course and made the activiti
 \frametitle{Results}
 \begin{block}{Attempts Block 1}
 \begin{itemize}
-\item G2 group: (C+VPL, textual programming), were up to 15 times and it was not uncommon to find a number greater than five attempts
+\item G2 group: (C+VPL, textual programming), the maximum number of attempts were 15 times and it was not uncommon to find a number greater than five attempts
 \item G1 group: (iVProg) used 4 attempts at most (only 1 student), more than that, the most common situation was the student submit the correct answer in first trial
 \end{itemize}
 \end{block}
@@ -354,8 +405,8 @@ A really small number os students had concluded the course and made the activiti
 \frametitle{Results}
 \begin{block}{Attempts Block 3}
 \begin{itemize}
-\item G2 group: the number of submissions was slightly higher, however, the number of attempts reached the maximum of 17
-\item G1 group: regarding the number of submissions for G1 few students did the activities, however, their submission was correct on only 1 attempt
+\item G2 group: the number of submissions was slightly higher than in G1 (6 students), however, the number of attempts reached the maximum of 17
+\item G1 group: regarding the number of submissions for G1 few students (5) did the activities, however, their submission was correct on only 1 attempt for all the students
 \end{itemize}
 \end{block}
 \end{frame}
@@ -364,7 +415,7 @@ A really small number os students had concluded the course and made the activiti
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Discussion, conslusions and future work}
+\frametitle{Discussion, conclusions and future work}
 \begin{block}{Discussion: NASA-TLX}
 The NASA TLX also showed that, in some cases, users have shown a little bit frustrated during the execution of the proposed tasks.
 In order to understand this phenomenon and, moreover, to collect qualitative data about the web-course we designed a simple online survey
@@ -378,7 +429,7 @@ To understand this phenomenon and, moreover, to collect qualitative data about t
 
 %------------------------------------------------
 \begin{frame}
-\frametitle{Discussion and future work}
+\frametitle{Discussion, conclusions and future work}
 \begin{block}{Discussion: online survey}
 \begin{enumerate}
 \item If you have not accessed the course system or did not accomplished the module I could share the reason with us? If yes, fill out the form below telling us why.
@@ -388,19 +439,19 @@ To understand this phenomenon and, moreover, to collect qualitative data about t
 \end{block}
 
 \begin{block}{Discussion: answers}
-The survey questionnaire was answered by 26 students (23 accessed the system and 3 did not). The main reason to frustrations were problems with the Java applet technology and the difficulties with its configuration.
+The survey questionnaire was answered by 26 students (23 accessed the course and 3 did not). The main reason to frustrations were problems with the Java applet technology and the difficulties with its configuration.
 \end{block}
 \end{frame}
 %------------------------------------------------
 \begin{frame}
-\frametitle{Discussion}
+\frametitle{Discussion, conclusions and future work}
 \begin{block}{Discussion: perceptions and considerations}
 Considering all collected data, from NASA TLX, activities log, and the survey, we can observe that visual programming is a good model to teach algorithms and programming. However the low number of respondents do not allow stronger assertions.
 \end{block}
 \end{frame}
 
 \begin{frame}
-\frametitle{Discussion, conslusions and future work}
+\frametitle{Discussion, conclusions and future work}
 \begin{block}{Future work}
 \begin{itemize}
 \item Since the reduced number of enrolled students prevented us of any statistical conclusions, we intend to perform a new course edition, this time as MOOC
@@ -416,7 +467,7 @@ Considering all collected data, from NASA TLX, activities log, and the survey, w
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Discussion, conslusions and future work}
+\frametitle{Discussion, conclusions and future work}
 Questions?
 \begin{block}{Presenter}
 Leônidas de Oliveira Brandão\\
@@ -434,19 +485,19 @@ Rua do Matão, 1010 - Cidade Universitária - São Paulo - SP\\
 \frametitle{References}
 \footnotesize{
 \begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[1]{p1} [1] Carlisle, M. C. (2009)
+\bibitem[Carlisle]{p1} [1] Carlisle, M. C. (2009)
 \newblock Raptor: a visual programming environment for teaching object-oriented programming
 \newblock \emph{Journal of Computing Sciences in Colleges}, Vol. 24, issue 4, April 2009, pp. 275-281.
 
-\bibitem[2]{p2}[2] Kölling, M. (2010)
+\bibitem[Kölling]{p2}[2] Kölling, M. (2010)
 \newblock The Greenfoot Programming Environment
 \newblock \emph{Transactions on Computing Education (TOCE)}, Vol. 10, issue 4, November 2010.
 
-\bibitem[3]{p3}[3] Maloney, J., Resnick, M., Rusk, N., Silverman, B., Eastmond, E. (2010)
+\bibitem[Maloney et al.]{p3}[3] Maloney, J., Resnick, M., Rusk, N., Silverman, B., Eastmond, E. (2010)
 \newblock The Scratch programming language and environment
 \newblock \emph{Transactions on Computing Education (TOCE)}, Vol. 10, issue 4, November 2010.
 
-\bibitem[4]{p4}[4] Cooper, S., Dann, W., Pausch, R. (2000)
+\bibitem[Cooper et al.]{p4}[4] Cooper, S., Dann, W., Pausch, R. (2000)
 \newblock Alice: a 3-D tool for introductory programming concepts
 \newblock \emph{Journal of Computing Sciences in Colleges}, Vol. 15, issue 5, May 2000, pp.107-116.
 \end{thebibliography}
@@ -457,7 +508,7 @@ Rua do Matão, 1010 - Cidade Universitária - São Paulo - SP\\
 \frametitle{References}
 \footnotesize{
 \begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[5]{p5}[5] Hart, S. G., Staveland, L. E.  (1988)
+\bibitem[Hart and Staveland]{p5}[5] Hart, S. G., Staveland, L. E.  (1988)
 \newblock Development of NASA-TLX (Task Load Index): Results of Empirical and Theoretical Research
 \newblock \emph{P. A. Hancock and N. Meshkati (Eds.) Human Mental Workload.} Amsterdam: North Holland Press.
 \end{thebibliography}
